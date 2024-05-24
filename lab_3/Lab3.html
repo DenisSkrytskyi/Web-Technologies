@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop 2.0</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border: 3px double black;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+            border: 3px double black;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .button {
+            text-align: center;
+        }
+        .button input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .optional-extras {
+            display: flex;
+            align-items: center;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center; font-weight: bold;">Pizza Shop 2.0</td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping:</td>
+                <td>
+                    <input type="radio" name="topping" value="Supreme" required> Supreme<br>
+                    <input type="radio" name="topping" value="Vegetarian"> Vegetarian<br>
+                    <input type="radio" name="topping" value="Hawaiian"> Hawaiian
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce:</td>
+                <td>
+                    <select name="sauce" required>
+                        <option value="" disabled selected>Select a sauce</option>
+                        <option value="Tomato">Tomato</option>
+                        <option value="Barbecue">Barbecue</option>
+                        <option value="Pesto">Pesto</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras:</td>
+                <td class="optional-extras">
+                    <input type="checkbox" name="extras" value="Extra Cheese"> Extra Cheese
+                    <input type="checkbox" name="extras" value="Gluten Free Base" style="margin-left: 20px;"> Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery Instructions:</td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="instructions" rows="4" placeholder="Enter delivery instructions"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button"><input type="submit" value="Send my Order"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
