@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background:#fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.sidebar {
+    width: 300px;
+    background: #efefef;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.sidebar h2 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+}
+
+.sidebar h2 strong {
+    font-weight: bold;
+}
+
+.role {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.social-links .facebook {
+    background: url('https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg') no-repeat center center;
+}
+
+.social-links .twitter {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg') no-repeat center center;
+}
+
+.social-links .youtube {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/YouTube_play_button_square_%282013-2017%29.svg') no-repeat center center;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .icon {
+    margin-right: 10px;
+}
+
+.download-cv {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.download-cv .icon {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#about h2, #services h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#about p {
+    margin: 10px 0;
+    color: #555;
+}
+
+#services {
+    margin-top: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.service p {
+    margin: 5px 0 0;
+    color: #777;
+}

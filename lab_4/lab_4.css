@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px; /* Фіксована ширина калькулятора */
+}
+
+.display {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+button {
+    flex: 1 1 25%;
+    background-color: #888;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%; /* Забезпечує фіксовану ширину для кнопок */
+}
+
+button.dark {
+    background-color: #333;
+}
+
+button.light {
+    background-color: #888;
+}
+
+button.operator {
+    background-color: orange;
+}
+
+button.zero {
+    flex: 1 1 50%;
+    max-width: 50%; /* Забезпечує фіксовану ширину для кнопки "0" */
+}
