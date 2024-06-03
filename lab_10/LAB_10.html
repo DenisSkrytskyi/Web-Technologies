@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption</title>
+    <link rel="stylesheet" href="LAB_10.css">
+</head>
+<body>
+    <div id="dog-list" class="dog-list"></div>
+
+    <div id="dog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-dog-image" src="" alt="Dog Image">
+            <div class="modal-text">
+                <h2 id="modal-dog-name"></h2>
+                <div class="modal-info">
+                    <p class="modal-info-title">Sex</p>
+                    <p id="modal-dog-sex" class="modal-info-detail"></p>
+                </div>
+                <hr>
+                <div class="modal-info">
+                    <p class="modal-info-title">Age</p>
+                    <p id="modal-dog-age" class="modal-info-detail"></p>
+                </div>
+                <hr>
+                <div class="modal-info">
+                    <p class="modal-info-title">Personality</p>
+                    <p id="modal-dog-description" class="modal-info-detail"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="LAB_10.js"></script>
+</body>
+</html>
